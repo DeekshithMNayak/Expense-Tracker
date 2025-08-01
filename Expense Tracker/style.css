@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background: #10b981;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#print-btn {
+  background-color: #3b82f6;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Print-only styling */
+@media print {
+  form,
+  #print-btn,
+  h1 {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  ul {
+    font-size: 18px;
+  }
+}
